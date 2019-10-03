@@ -14,4 +14,4 @@ COPY etc/skel/.zshrc /root/.zshrc
 
 RUN chsh -s $(which zsh)
 
-CMD [ "zsh" ]
+ENTRYPOINT [ "/bin/zsh" ]
