@@ -12,4 +12,6 @@ RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/too
 
 COPY etc/skel/.zshrc /root/.zshrc
 
-CMD zsh
+RUN chsh -s $(which zsh)
+
+CMD [ "zsh" ]
